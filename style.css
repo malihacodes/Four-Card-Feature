@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  body{
+   
+  background-color: hsl(0, 0%, 98%);
+  
+  background-repeat: no-repeat;
+    min-height: 56vh;
+    display: flex;
+    align-items: center;
+   
+    flex-direction: column;
+    justify-content: center;
+    
+    font-family: 'Poppins', sans-serif;
+    }
+
+    .container{
+        min-height: 30vh;
+        display: flex;
+        
+        width:90%;
+        
+    }
+
+    .first-flex, .karma, .calculator, .supervisor{
+        background-color: white;
+       border-radius:10px;
+       width: 350px;
+       height: 200px;
+      padding: 1rem;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+    }
+    .first-flex h3, .karma h3, .calculator h3, .supervisor h3{
+        color: hsl(234, 12%, 34%);
+        font-weight: 600;
+        padding: .5rem;
+    }
+
+    .calculator{
+
+        border: 5px solid white;
+    border-top-color: hsl(212, 86%, 64%);
+    position: relative;
+    right: 150px;
+    top:150px;
+        
+    }
+
+    .supervisor {
+
+        border: 5px solid white;
+        border-top-color: hsl(180, 62%, 55%);
+       left:90px;
+       position: relative;
+       top: 150px;
+       
+    }
+   
+   .karma{
+    border: 5px solid white;
+    border-top-color: hsl(34, 97%, 64%);
+    position: relative;
+    width: 40%;
+    top:300px;
+    left: -15%;
+    
+    width: 350px;
+}
+.first-flex{
+    
+    border: 5px solid white;
+        border-top-color: hsl(0, 78%, 62%);
+    position: relative;
+    top: 29px;
+    left:140px;   
+}
+
+p{
+    font-size: 15px;
+    color: hsl(229, 6%, 66%);
+   margin-bottom: 1rem;
+   
+}
+
+h1{
+    margin-bottom: .5rem;
+    
+}
+
+.heading1{
+
+color: hsl(229, 6%, 66%);
+font-weight: 200;
+
+   
+}
+
+h3{
+    color: hsl(229, 6%, 66%);
+   font-weight: 400;
+  
+
+}
+
+.flex-icon{
+
+    display: flex;
+    justify-content: end;
+}
+
+.desc{
+
+    width:46%;
+    text-align: center;
+}
+
+@media (max-width: 400px) {
+    .container {
+    
+      flex-direction: column;
+      align-items: center;
+    }
+   
+    .heading1, .heading2{
+
+
+        text-align: center;
+        font-size: 26px;
+    }
+    .desc{
+
+        width:92%;
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 1rem;
+    }
+
+    .supervisor, .karma, .first-flex, .calculator {
+
+      
+     
+       position: static;
+       margin-bottom: 1rem;
+       
+    }
+   
+}
+
+
